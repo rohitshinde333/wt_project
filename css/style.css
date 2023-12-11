@@ -1,0 +1,2464 @@
+body{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.navbar-brand img{
+    position: absolute;
+    height: 120px;
+    width: 120px;
+    margin-top: -40px;
+    border-radius: 0 0 20px 20px;
+    z-index:1;
+}
+
+.navbar-nav .nav-item .nav-link{
+    color: rgb(201, 200, 200);
+    font-size: 13px;
+}
+
+#academics .nav-link{
+    color: rgb(201, 200, 200);
+    font-size: 13px;
+}
+
+li > a:after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: white;
+    transform: scaleX(0);
+    transition: transform .3s;
+}
+
+li > a:hover:after{
+      transform: scaleX(1);
+      transition: transform .3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover{
+    color: white;
+}
+
+.dropdown-menu-right {
+    position: absolute;
+    left: 160px;
+    top: 200px;
+    display: none;
+}
+
+.navbar-nav .dropdown-menu{
+    margin-top: 0px;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item{
+    color: white;
+    font-size: 13px;
+    text-align: center;
+    padding: 15px 0;
+    font-weight: 500;
+    position: relative;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item:hover{
+    background-color: transparent;
+}
+
+.navbar-nav .dropdown-menu .dropdown-item::after{
+    background-color: white;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,0);
+    width: 90px;
+}
+
+#activities::after{
+    background-color: transparent;
+}
+
+#activities:focus{
+    background-color:  rgba(207, 199, 199, 0.425);
+}
+
+#teacheractivities::after{
+    background-color: transparent;
+}
+
+.container .navbar-nav li.active > a {
+    color: white !important;
+}
+
+.container .navbar-nav li.active > a::after{
+    content: '';
+    display: block;
+    height: 1.5px;
+    background: white;
+    transform: scaleX(1);
+    transition: transform .3s;
+}
+
+#academics > a:focus{
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.form-control::-webkit-input-placeholder{
+    color: white;
+    font-weight: 500;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: none;
+}
+ 
+#headertext{
+    font-size: 23px; 
+    color: black;
+    margin: -500px auto 0 auto;
+    font-weight: bold;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+    margin-top: -500px;
+    width: 75%;
+}
+
+.fa-chevron-right{
+    margin-left: 15px;
+}
+
+#email::-webkit-input-placeholder{
+    color:black;
+    font-size: 12px;
+}
+
+.testimonial{
+    height: 530px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    opacity: 0.6;
+    position: relative;
+    z-index: 0;
+}
+
+#carouselIndicators{  
+    width: 100%;  
+    height: 530px;
+    position: absolute;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin-top: -530px;
+}
+
+.carousel-inner{
+    height: 500px;
+}
+.carousel-item {
+    position: absolute;
+    height: 500px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption{
+    color: black;
+    font-family: "Arial",sans-serif;
+    letter-spacing: 0.5px;
+    line-height: 40px;
+    text-align: center;
+}
+
+#tst-carousel-content{
+    position: absolute;
+    height: 500px;
+    top: 0px;
+    padding: 0;
+}
+
+.fa-facebook{
+    font-size: 2vw;
+    color:rgb(21, 46, 129);
+    text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+} 
+
+.fa-twitter{
+    font-size: 2vw;
+    color:rgb(21, 46, 129);
+    text-shadow: -1px -1px 0 white,
+    1px -1px 0 white,
+    -1px 1px 0 white,
+    1px 1px 0 white;
+}
+
+.fa-envelope-o{
+    font-size: 2vw;
+    color: white;
+}
+
+.fa-copyright{
+    color: white;
+    font-size: 15px;
+}
+
+/*academic approach page*/
+.multi-item-carousel{
+    overflow: hidden;
+}
+
+.multi-item-carousel .carousel-control-prev, 
+.multi-item-carousel .carousel-control-next {
+    width: 25%;
+    z-index: 11;  /* .carousel-caption has z-index 10 */
+  }
+
+.multi-item-carousel .carousel-inner {
+    width: 150%;
+    left: -25%;
+}
+
+.carousel-inner > .carousel-item.next, 
+.carousel-inner > .carousel-item.active.right {
+    -webkit-transform: translate3d(33%, 0, 0);
+    transform: translate3d(33%, 0, 0);
+}
+
+.carousel-inner > .carousel-item.prev, 
+.carousel-inner > .carousel-item.active.left {
+    -webkit-transform: translate3d(-33%, 0, 0);
+    transform: translate3d(-33%, 0, 0);
+}
+
+.item{
+    float: left;
+    position: relative;  /* captions can now be added */
+    width: 33.33333333%;
+}
+
+/*lab page */
+
+.carousel {
+    position: relative;
+}
+.carousel-item img {
+    object-fit: cover;
+}
+
+.thumb{
+    padding: 0px 0px !important;
+    margin: 0px 20px;
+    text-align: center;
+}
+
+/*curricular activities page */
+
+#caheadingmargin{
+    letter-spacing: 3px !important;
+    font-size: 41px !important;
+    margin-top: -18.6vw !important;
+    margin-left: -20px;
+}
+
+/*admission page */
+#mailicon{
+    font-size: 15px;
+    color: black;
+    padding-right: 12px;
+}
+
+.fa-phone{
+    padding-right: 12px;
+}
+
+/*contacts page*/
+#contactsmail{
+    color: black;
+    font-weight: bold;
+}
+
+/*404 page*/
+.errorpage{
+    height: 500px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
+    z-index: 0;
+}
+
+.errorbutton{
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background: none;
+    cursor: pointer;
+    padding: 15px 80px;
+    display: inline-block;
+    margin: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 700;
+    outline: none;
+    position: relative;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button-4 {
+    border: 3px solid #fff;
+    border-radius: 50px;
+    color: #fff;
+    overflow: hidden;
+}
+.button-4:active {
+    border-color: whitesmoke;
+    color: whitesmoke;
+}
+.button-4:hover {
+    background: rgba(58, 58, 58, 0.589);
+}
+
+.button-4>.fa {
+    position: absolute;
+    height: 100%;
+    font-size: 125%;
+    line-height: 2.5;
+    color: #fff;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+}
+.button-4:active>.fa {
+    color: whitesmoke;
+}
+
+.button-4b>.fa {
+    left: -50%;
+    top: 0;
+}
+.button-4b:hover>.fa {
+    left: 10%;
+}
+
+@media only screen and (max-width: 1199px){
+    #schoolcardbody{
+        margin-top: -45px;
+    }
+
+    #newsitem1{
+        margin-left: -140px !important;
+    }
+
+    #newsitem2{
+        margin-left: 100px !important;
+    }
+
+    #newsitem3{
+        margin-left: 100px !important;
+    }
+
+    /*curricular activities page */
+
+    #caheadingmargin{
+        letter-spacing: 3px !important;
+        font-size: 37px !important;
+        margin-top: -18.6vw !important;
+        margin-left: -20px;
+    }
+
+    /*event page*/
+    .eventdate{
+        padding-left: 100px !important;
+    }
+
+    .eventheading{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+    }
+
+    .eventtext{
+        padding-left: 100px !important;
+    }
+}
+
+@media only screen and (max-width: 1126px){
+    /*event page*/
+    .eventdate{
+        padding-left: 100px !important;
+        padding-top: 10px !important;
+    }
+
+    .eventheading{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+        font-size: 15px !important;
+    }
+
+    .eventtext{
+        padding-left: 100px !important;
+    }
+
+    .eventnewsitem1{
+        margin-left: 6vw !important;
+    }
+}
+
+@media only screen and (max-width: 1060px){
+    /* lab page*/
+    .thumb{ 
+        margin: 0px 17px;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 2px !important;
+        font-size: 36px !important;
+        margin-top: -18.6vw !important;
+        margin-left: -20px;
+    }
+
+    /*events page */
+    .eventnewsitem1{
+        margin-left: 4vw !important;
+    }
+}
+
+@media only screen and (max-width: 992px){
+    #searchbar{
+        margin-bottom: 10px;
+    }
+
+    #schoolcardbody{
+        margin-top: -10px;
+    }
+
+    #schoolcardtitle{
+        margin-top: -40px;
+    }
+
+    #schoolcardtext{
+       font-size: 13px !important;
+       line-height: 25px !important;
+       margin-bottom: 0px !important; 
+    }
+
+    #cardcontent{
+        height: 360px;
+        width: 360px;
+    }
+
+    #schoolimgdiv{
+        width: 360px;
+        height: 360px;
+    }
+
+    #schoolcardcontainer{
+        margin-top: 240px !important;
+    }
+
+    #newsitem1{
+        margin-left: -100px !important;
+    }
+
+    /* academicapproach page*/
+    
+    #aacarouselslides{
+        height: 45vw !important;
+    }
+
+    #aacarouselcaptions{
+        height: 45vw !important;
+    }
+
+    #aacarouselinner{
+        height: 45vw !important;
+    }
+
+    #aacarouselitem1{
+        height: 45vw !important;
+    }
+
+    #aacarouselitem2{
+        height: 45vw !important;
+    }
+
+    #aacarouselitem3{
+        height: 45vw !important;
+    }
+
+    #aaimg1{
+        height: 45vw !important;
+    }
+
+    #aaimg2{
+        height: 45vw !important;
+    }
+
+    #aaimg3{
+        height: 45vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -26vw !important;
+    }
+
+    /* infrastructure page*/
+    
+    #icarouselslides{
+        height: 42vw !important;
+    }
+
+    #icarouselcaptions{
+        height: 42vw !important;
+    }
+
+    #icarouselinner{
+        height: 42vw !important;
+    }
+
+    #icarouselitem1{
+        height: 42vw !important;
+    }
+
+    #icarouselitem2{
+        height: 42vw !important;
+    }
+
+    #icarouselitem3{
+        height: 42vw !important;
+    }
+
+    #iimg1{
+        height: 42vw !important;
+    }
+
+    #iimg2{
+        height: 42vw !important;
+    }
+
+    #iimg3{
+        height: 42vw !important;
+    }
+
+    #iheadingmargin{
+        margin-top: -24.8vw !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -24vw !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 1px !important;
+        font-size: 33px !important;
+        margin-top: -23vw !important;
+        margin-left: -20px;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    /*event page*/
+
+    #eventrow{
+        margin-left: 100px !important;
+    }
+    
+    #eventcolumn2{
+        margin-top: 30px;
+    }
+
+    .eventnewsitem1{
+        margin-left: 18vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 18vw !important;
+    }
+}
+
+@media only screen and (max-width: 930px){
+    #newsitem1{
+        width: 450px !important;
+        margin-left: -20px !important;
+    }
+
+    #newsitem2{
+        width: 270px !important;
+        height: 246px;
+        margin-left: 80px !important;
+    }
+
+    #newsitem3{
+        width: 270px !important;
+        height: 246px;
+        margin-left: 80px !important;
+    }
+
+    #firefighterimg{
+        height: 350px !important;
+    }
+
+    .footer1{
+        font-size: 12px !important;
+    }
+
+    .footer2{
+        font-size: 10.5px !important;
+    }
+
+    .footer3{
+        font-size: 12px !important;
+    }
+
+    /*lab page*/
+    .thumbnailbutton{
+        width: 40px !important;
+    }
+
+    .thumb{ 
+        margin: 0px 15px;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 1px !important;
+        font-size: 30px !important;
+        margin-top: -23vw !important;
+        margin-left: -20px;
+    }
+
+    /*branches page */
+    .branchesname{
+        font-size: 11px !important;
+    }
+
+    /*event page*/
+    .eventnewsitem1{
+        margin-left: 16vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 16vw !important;
+    }
+}
+
+@media only screen and (max-width: 860px){
+    /*our school page*/
+    .ourschoolheading{
+        font-size: 39px !important;
+    }
+    
+    /*lab page*/
+    .thumb{ 
+        margin: 0px 12px;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 1px !important;
+        font-size: 27px !important;
+        margin-top: -23vw !important;
+        margin-left: -20px;
+    }
+
+    /*branches page */
+    .branchesname{
+        font-size: 10px !important;
+    }
+
+    /*event page*/
+    .eventnewsitem1{
+        margin-left: 15vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 15vw !important;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    #headertext{
+        font-size: 17px;
+        line-height: 20px;
+        width: 75%;
+        margin-top: -400px;
+    }
+
+    #schoolcardbody{
+        margin-top: 0px;
+    }
+
+    #schoolimgdiv{
+        width: 510px;
+        height: 300px;
+    }
+
+    #cardcontent{
+        height: 300px;
+        width: 510px;
+    }
+
+    #schoolcardcontainer{
+        margin-top: 168px !important;
+    }
+
+    #schoolcardtext{
+        font-size: 15px !important;
+        line-height: 20px !important;
+        margin-top: -10px;
+    }
+
+    #schoolbutton{
+        margin-top: -15px;
+        font-size: 12px !important;
+    }
+
+    #schoolcardtitle{
+        font-size: 17px;
+        margin-top: -67px;
+    }
+
+    #newsitem1{
+        width: 510px !important;
+        margin-left: 0px !important;
+    }
+
+    #newsitem2{
+        width: 330px !important;
+        text-align: center !important;
+    }
+
+    #newsitem3{
+        width: 330px !important;
+        text-align: center !important;
+    }
+
+    #firefighterimg{
+        height: 365px !important;
+    }
+
+    .footer1{
+        font-size: 12px !important;
+    }
+
+    .footer2{
+        font-size: 12px !important;
+    }
+
+    .footer3{
+        font-size: 12px !important;
+    }
+
+    #footer3div{
+        width: 180px !important;
+    }
+    
+    #footermail{
+        font-size: 7px !important;
+    }
+
+    /* our school page */
+    .ourschoolheading{
+        font-size: 40px !important;
+    }
+
+    #ourschoolcardimg{
+        height: 43vw;
+    }
+
+    .ourschoolcardcontent{
+        line-height: 23px !important;
+    }
+
+     /* academicapproach page*/
+    
+     #aacarouselslides{
+        height: 49vw !important;
+    }
+
+    #aacarouselcaptions{
+        height: 49vw !important;
+    }
+
+    #aacarouselinner{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem1{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem2{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem3{
+        height: 49vw !important;
+    }
+
+    #aaimg1{
+        height: 49vw !important;
+    }
+
+    #aaimg2{
+        height: 49vw !important;
+    }
+
+    #aaimg3{
+        height: 49vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -27.9vw !important;
+        font-size: 39px !important;
+    }
+
+    #aacarouselprev{
+        margin-left: 16vw !important;
+    }
+
+    #aacarouselnext{
+        margin-right: 17.5vw !important;
+    }
+
+        /* academicapproach page*/
+    
+     #aacarouselslides{
+        height: 49vw !important;
+    }
+
+    #aacarouselcaptions{
+        height: 49vw !important;
+    }
+
+    #aacarouselinner{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem1{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem2{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem3{
+        height: 49vw !important;
+    }
+
+    #aaimg1{
+        height: 49vw !important;
+    }
+
+    #aaimg2{
+        height: 49vw !important;
+    }
+
+    #aaimg3{
+        height: 49vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -27.9vw !important;
+        font-size: 39px !important;
+    }
+
+        /* academicapproach page*/
+    
+     #aacarouselslides{
+        height: 49vw !important;
+    }
+
+    #aacarouselcaptions{
+        height: 49vw !important;
+    }
+
+    #aacarouselinner{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem1{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem2{
+        height: 49vw !important;
+    }
+
+    #aacarouselitem3{
+        height: 49vw !important;
+    }
+
+    #aaimg1{
+        height: 49vw !important;
+    }
+
+    #aaimg2{
+        height: 49vw !important;
+    }
+
+    #aaimg3{
+        height: 49vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -27.9vw !important;
+        font-size: 39px !important;
+    }
+
+    /* infrastructure page*/
+    
+    #icarouselslides{
+        height: 44vw !important;
+    }
+
+    #icarouselcaptions{
+        height: 44vw !important;
+    }
+
+    #icarouselinner{
+        height: 44vw !important;
+    }
+
+    #icarouselitem1{
+        height: 44vw !important;
+    }
+
+    #icarouselitem2{
+        height: 44vw !important;
+    }
+
+    #icarouselitem3{
+        height: 44vw !important;
+    }
+
+    #iimg1{
+        height: 44vw !important;
+    }
+
+    #iimg2{
+        height: 44vw !important;
+    }
+
+    #iimg3{
+        height: 44vw !important;
+    }
+
+    #iheadingmargin{
+        margin-top: -25vw !important;
+        font-size: 35px !important;
+        letter-spacing: 2px !important;
+    }
+
+    /*lab page*/
+    .thumb{ 
+        margin: 10px 20px;
+    }
+
+    #carousel-thumbs{
+        height: 270px !important;
+    }
+
+    #thumbcarouselinner{
+        height: 270px !important;
+    }
+
+    .thumbnailitem{
+        height: 270px !important;
+    }
+
+    #thumbnailbutton{
+        margin-top: 70px !important;
+        width: 60px !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -25vw !important;
+        font-size: 34px !important;
+        letter-spacing: 5px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 24px !important;
+        margin-top: -24vw !important;
+        margin-left: -15px;
+    }
+}
+
+@media only screen and (max-width: 700px){
+    /* academicapproach page*/
+    #aaheadingmargin{
+        margin-top: -27vw !important;
+        font-size: 30px !important;
+    }
+
+    .la-chevron-circle-left{
+        font-size: 30px !important;
+    }
+
+    .la-chevron-circle-right{
+        font-size: 30px !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -25vw !important;
+        font-size: 31px !important;
+        letter-spacing: 3px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 21px !important;
+        margin-top: -24vw !important;
+        margin-left: -15px;
+    }
+
+    /*branches page */
+    .branchesname{
+        font-size: 10px !important;
+        padding-left: 0px !important;
+    }
+}
+
+@media only screen and (max-width: 644px){
+    /*branches page*/
+    .branchesname{
+        font-size: 8px !important;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 15px !important;
+    }
+
+    .contactinfo{
+        font-size: 13px !important;
+    }
+
+    .adcontact{
+        padding-left: 5px !important;
+    }
+
+    /*event page*/
+
+    #eventrow{
+        margin-left: 100px !important;
+    }
+    
+    #eventcolumn2{
+        margin-top: 30px;
+    }
+
+    .eventdate{
+        padding-left: 100px !important;
+        padding-top: 10px !important;
+    }
+
+    .eventheading{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+        font-size: 13px !important;
+    }
+
+    .eventtext{
+        padding-left: 100px !important;
+        font-size: 9px !important;
+    }
+
+    /*contacts page*/
+    .gmaplocation{
+        width: 390px !important;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    /*lab page*/
+    #thumbnailbutton{
+        width: 40px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 20px !important;
+        margin-top: -24vw !important;
+        margin-left: -15px;
+    }
+
+    /*error page*/
+    .errorbutton{
+        padding: 15px 50px;
+    }
+
+    #errorheading{
+        font-size: 60px !important;
+    }
+
+    #errormessage{
+        font-size: 20px !important;
+    }
+}
+
+@media only screen and (max-width: 580px){
+    #searchbar{
+        height: 33.5px;
+        width: 159px;
+    }
+
+    #formsearch{
+        margin-top: -33px;
+        margin-left: 40px;
+    }
+
+    #schoolimgdiv{
+        width: 250px;
+        height: 250px;
+    }
+
+    #cardcontent{
+        height: 250px;
+        width: 200px;
+    }
+
+    #schoolimg{
+        border-radius: 25px 0 0 25px !important;
+    }
+
+    #schoolcardtext{
+        font-size: 10px !important;
+        line-height: 15px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -60px;
+        font-size: 13px !important;
+    }
+
+    #schoolbutton{
+        font-size: 8px !important;
+        margin-top: -15px !important;
+    }
+
+    #schoolcardcontainer{
+        margin-top: 120px !important;
+    }
+
+    #newsitem1{
+        width: 405px !important;
+        margin-left: 7vw !important;
+    }
+
+    #newsitem2{
+        width: 330px !important;
+        text-align: center !important;
+    }
+
+    #newsitem3{
+        width: 330px !important;
+        text-align: center !important;
+    }
+
+    #firefighterimg{
+        height: 300px !important;
+    }
+
+    #newsheading{
+        font-size: 20px;
+    }
+
+    #tstcontent1{
+        font-size: 22px;
+    }
+
+    #tstcontent2{
+        font-size: 17px;
+        padding: 0 5px;
+    }
+
+    .footer1{
+        font-size: 9px !important;
+    }
+
+    .footer2{
+        font-size: 9px !important;
+    }
+
+    .footer3{
+        font-size: 9px !important;
+    }
+
+    #footer3div{
+        width: 130px !important;
+    }
+    
+    #footermail{
+        font-size: 6px !important;
+    }
+
+    .fa-facebook{
+        font-size: 15px;
+    }
+
+    .fa-twitter{
+        font-size: 15px;
+    }
+    
+    .fa-envelope-o{
+        font-size: 15px;
+    }
+
+    /*our school page*/
+    #ourschoolcardimg{
+        height: 46vw;
+    }
+
+    .ourschoolcardcontent{
+        line-height: 21px !important;
+    }
+
+     /* academicapproach page*/
+    
+     #aacarouselslides{
+        height: 54vw !important;
+    }
+
+    #aacarouselcaptions{
+        height: 54vw !important;
+    }
+
+    #aacarouselinner{
+        height: 54vw !important;
+    }
+
+    #aacarouselitem1{
+        height: 54vw !important;
+    }
+
+    #aacarouselitem2{
+        height: 54vw !important;
+    }
+
+    #aacarouselitem3{
+        height: 54vw !important;
+    }
+
+    #aaimg1{
+        height: 54vw !important;
+    }
+
+    #aaimg2{
+        height: 54vw !important;
+    }
+
+    #aaimg3{
+        height: 54vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -30vw !important;
+        font-size: 4.7vw !important;
+    }
+
+     /* infrastructure page*/
+    
+    #icarouselslides{
+        height: 50vw !important;
+    }
+
+    #icarouselcaptions{
+        height: 50vw !important;
+    }
+
+    #icarouselinner{
+        height: 50vw !important;
+    }
+
+    #icarouselitem1{
+        height: 50vw !important;
+    }
+
+    #icarouselitem2{
+        height: 50vw !important;
+    }
+
+    #icarouselitem3{
+        height: 50vw !important;
+    }
+
+    #iimg1{
+        height: 50vw !important;
+    }
+
+    #iimg2{
+        height: 50vw !important;
+    }
+
+    #iimg3{
+        height: 50vw !important;
+    }
+
+    #iheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 4.7vw !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 29px !important;
+        letter-spacing: 1px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 17px !important;
+        margin-top: -26.5vw !important;
+        margin-left: -10px;
+    } 
+}
+
+@media only screen and (max-width: 575px){
+    /*branches page */
+    .branchesname{
+    font-size: 13px !important;
+    padding-left: 10px !important;
+    }
+
+    #secondrowbranches{
+        padding-top: 50px;
+    }
+
+    /*event page*/
+
+    #eventrow{
+        margin-left: 10px !important;
+    }
+    
+    #eventcolumn2{
+        margin-top: 30px;
+    }
+
+    .eventdate{
+        padding-left: 100px !important;
+        padding-top: 10px !important;
+    }
+
+    .eventheading{
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+        font-size: 13px !important;
+    }
+
+    .eventtext{
+        padding-left: 100px !important;
+        font-size: 9px !important;
+    }
+
+    .eventnewsitem1{
+        margin-left: 13vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 13vw !important;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #lmbutton{
+        padding: 6px 6px !important;
+    }
+
+    #headertext{
+        font-size: 11px;
+        line-height: 17px;
+        margin-top: -380px;
+    }
+
+    .navbar-brand img{
+        height: 90px;
+        width: 90px;
+        margin-top: -30px;
+    }
+
+    .navbar-toggler{
+        font-size: 15px !important;
+        padding: 5px 7px !important;
+    }
+
+    #schoolimgdiv{
+        width: 190px;
+        height: 150px;
+    }
+
+    #cardcontent{
+        height: 150px;
+        width: 210px;
+    }
+
+    #schoolcardtext{
+        font-size: 8px !important;
+        margin-top: -15px;
+        line-height: 10px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -70px;
+        font-size: 10px !important;
+    }
+
+    #schoolbutton{
+        font-size: 7px !important;
+        padding: 7px 5px !important;
+        margin-top: -45px !important;
+    }
+
+    #newsitem1{
+        width: 300px !important;
+        height: 170px !important;
+        margin-left: 15vw !important;
+    }
+
+    #newsitem2{
+        width: 290px !important;
+        height: 250px !important; 
+        margin-top: 220px;
+    }
+
+    #newsitem3{
+        width: 290px !important;
+        height: 250px !important;
+    }
+
+    #firefighterimg{
+        height: 220px !important;
+    }
+
+    #tstcontent2{
+        font-size: 16px;
+        padding: 0 10px;
+    }
+
+    .footer1{
+        font-size: 8px !important;
+    }
+
+    .footer2{
+        font-size: 10px !important;
+    }
+
+    .footer3{
+        font-size: 10px !important;
+    }
+
+    #footer3div{
+        width: 140px !important;
+    }
+    
+    #footermail{
+        font-size: 6px !important;
+    }
+
+    .fa-facebook{
+        padding: 0 3px !important;
+        font-size: 15px !important;
+    }
+
+    .fa-twitter{
+        padding: 0 3px !important;
+        font-size: 15px !important;
+    }
+    
+    .fa-envelope-o{
+        padding: 0 3px !important;
+        font-size: 15px !important;
+    }
+
+    .fa-copyright{
+        padding-right: 2px !important;
+    }
+
+    /* our school page */
+    #ourschoolimg{
+        height: 280px !important;
+    }
+
+    .ourschoolheading{
+        font-size: 30px !important;
+    }
+    
+    #ourschoolcardimg{
+        height: 47vw;
+    }
+
+    .ourschoolcardcontent{
+        font-size: 14px !important;
+        line-height: 21px !important;
+    }
+
+    /*academic approach page*/
+
+    #academiccardimg{
+        width: 70vw !important;
+    }
+
+    #aaheadingmargin{
+        margin-top: -29.5vw !important;
+        font-size: 20px !important;
+    }
+
+    .la-chevron-circle-left{
+        font-size: 27px !important;
+    }
+
+    .la-chevron-circle-right{
+        font-size: 27px !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 25px !important;
+        letter-spacing: 1px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 15px !important;
+        margin-top: -26.5vw !important;
+        margin-left: -10px;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 15px !important;
+    }
+
+    .contactinfo{
+        font-size: 11px !important;
+    }
+
+    /*contacts page*/
+    .gmaplocation{
+        width: 270px !important;
+    }
+
+    /*event page*/
+    .eventnewsitem1{
+        margin-left: 10vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 10vw !important;
+    }
+
+    /*error page*/
+    .errorbutton{
+        padding: 15px 50px;
+        font-size: 12px;
+    }
+
+    #errorheading{
+        font-size: 60px !important;
+    }
+
+    #errormessage{
+        font-size: 18px !important;
+    }
+
+    .button-4>.fa {
+        line-height: 3;
+    }
+}
+
+@media only screen and (max-width: 450px){
+    #schoolimgdiv{
+        width: 190px;
+        height: 160px;
+    }
+
+    #cardcontent{
+        height: 160px;
+        width: 200px;
+    }
+
+    #schoolcardtext{
+        font-size: 8px !important;
+        margin-top: -15px;
+        line-height: 12px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -70px;
+        font-size: 9px !important;
+    }
+
+    #schoolbutton{
+        font-size: 8px !important;
+        padding: 3px 2px !important;
+        margin-top: -45px !important;
+    }
+
+    #schoolcardcontainer{
+        margin-top: 70px !important;
+    }
+
+    #newsitem1{
+        width: 280px !important;
+        height: 190px !important;
+        margin-left: 12vw !important;
+    }
+
+    #newsitem2{
+        width: 230px !important;
+        height: 250px !important; 
+        margin-top: 190px;
+        margin-left: 80px !important;
+    }
+
+    #newsitem3{
+        width: 230px !important;
+        height: 250px !important;
+        margin-left: 80px !important;
+    }
+
+    #firefighterimg{
+        height: 190px !important;
+    }
+
+    .footer1{
+        font-size: 10px !important;
+    }
+
+    .footer2{
+        font-size: 10px !important;
+    }
+
+    .footer3{
+        font-size: 10px !important;
+    }
+
+    #footer3div{
+        width: 120px !important;
+    }
+    
+    #footermail{
+        font-size: 5.5px !important;
+    }
+
+    .fa-facebook{
+        padding: 0 3px !important;
+        font-size: 12px !important;
+    }
+
+    .fa-twitter{
+        padding: 0 3px !important;
+        font-size: 12px !important;
+    }
+    
+    .fa-envelope-o{
+        padding: 0 3px !important;
+        font-size: 12px !important;
+    }
+
+    .fa-copyright{
+        padding-right: 2px !important;
+    }
+
+    /*our school page*/
+    #ourschoolcardimg{
+        height: 49vw;
+    }
+
+    #aaheadingmargin{
+        margin-top: -29.8vw !important;
+        font-size: 20px !important;
+        letter-spacing: 4px !important;
+    }
+
+    /*lab page*/
+    .thumb{ 
+    margin: 10px 12px;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 12px !important;
+        margin-top: -26.5vw !important;
+        margin-left: -10px;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 12px !important;
+    }
+
+    .contactinfo{
+        font-size: 10px !important;
+    }
+
+    /*event page*/
+    .eventnewsitem1{
+        margin-left: 8vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 8vw !important;
+    }
+}
+
+@media only screen and (max-width: 430px){
+    #schoolimgdiv{
+        width: 180px;
+        height: 160px;
+    }
+
+    #schoolcardbody{
+        margin-top: 5px;
+    }
+
+    #cardcontent{
+        height: 160px;
+        width: 140px;
+    }
+
+    #schoolcardtext{
+        font-size: 8px !important;
+        margin-top: -10px;
+        line-height: 8px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -75px;
+        font-size: 9px !important;
+    }
+
+    #schoolbutton{
+        font-size: 8px !important;
+        padding: 3px 2px !important;
+        margin-top: -45px !important;
+        width: 110px;
+    }
+
+    #newsitem1{
+        margin-left: 30px !important;
+    }
+
+    #newsitem2{
+        margin-left: 50px !important;
+    }
+
+    #newsitem3{
+        margin-left: 50px !important;
+    }
+
+    #tststudentimg{
+        width: 190px !important;
+    }
+
+    #tstcontent1{
+        font-size: 20px;
+    }
+
+    #tstcontent2{
+        font-size: 15px;
+        padding: 0 15px;
+    }
+
+    #footermail{
+        font-size: 2vw !important;
+        word-break: break-all;
+    }
+
+    .fa-facebook{
+        font-size: 12px;
+    }
+
+    .fa-twitter{
+        font-size: 12px;
+    }
+    
+    .fa-envelope-o{
+        font-size: 12px;
+    }
+
+    .footer3{
+        font-size: 8px !important;
+    }
+
+    #footer3div{
+        width: 100px !important;
+    }
+
+    /* our school page */
+    #ourschoolimg{
+        height: 300px !important;
+    }
+
+    .ourschoolheading{
+        font-size: 27px !important;
+    }
+
+    #ourschoolcardimg{
+        height: 49vw;
+    }
+
+    .ourschoolcardcontent{
+        font-size: 13px !important;
+        line-height: 19px !important;
+    }
+
+    .ourschoolpara{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    /*academic approach page*/
+
+    #academiccardimg{
+        height: 45vw;
+    }
+
+    #aaheadingmargin{
+        margin-top: -30.5vw !important;
+        font-size: 21px !important;
+        letter-spacing: 2px !important;
+    }
+
+    .la-chevron-circle-left{
+        font-size: 18px !important;
+    }
+
+    .la-chevron-circle-right{
+        font-size: 18px !important;
+    }
+
+    /*infrastructure page*/
+    .iitemtext{
+        font-size: 16px;
+    }
+
+    .iitemimg{
+        height: 40px !important;
+    }
+
+    .iitem{
+        height: 140px !important;
+    }
+
+     /*play ground page */
+     #pgheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 19px !important;
+        letter-spacing: 1px !important;
+    }
+
+    /*student activities page */
+    #studentactivitieslist{
+        padding-left: 50px !important;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 11px !important;
+    }
+
+    .contactinfo{
+        font-size: 8px !important;
+    }
+
+    .adcontactcontent{
+        padding-left: 140px !important;
+    }
+
+    .adcontact{
+        padding-left: 0px !important;
+        margin-left: 10px !important;
+    }
+
+     /*event page*/
+    #eventnewsitem1img{
+        width: 250px !important;
+    }
+
+    #eventnewsitem2img{
+        width: 250px !important;
+    } 
+
+    .eventnewsitem1{
+        margin-left: 6vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 6vw !important;
+    }
+
+    #eventnewsitem1text{
+        width: 242px !important;
+    }
+
+    #eventnewsitem2text{
+        width: 242px !important;
+    }
+
+    /*error page*/
+
+    .button-4>.fa {
+        line-height: 3.5;
+    }
+
+    .errorbutton{
+        padding: 15px 45px;
+        font-size: 9px !important;
+    }
+
+    #errorheading{
+        font-size: 50px !important;
+    }
+
+    #errormessage{
+        font-size: 15px !important;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    /* lab page */
+    #thumbnailbutton{
+        width: 30px !important;
+    }
+
+    /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 10px !important;
+        margin-top: -26.5vw !important;
+        margin-left: -5px;
+    }
+
+    /*branches page */
+    .branchesname{
+        font-size: 10.5px !important;
+        padding-left: 10px !important;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 11px !important;
+    }
+
+    .contactinfo{
+        font-size: 9px !important;
+    }
+
+    .adcontactcontent{
+        padding-left: 110px !important;
+    }
+
+    .adcontact{
+        padding-left: 0px !important;
+        margin-left: 8px !important;
+    }
+
+    #adcontactimg{
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    /*event page*/
+    .eventnewsitem1{
+        margin-left: 2vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 2vw !important;
+    }
+
+    #eventnewsitem1img{
+        width: 250px !important;
+    }
+
+    #eventnewsitem2img{
+        width: 250px !important;
+    } 
+
+    #eventnewsitem1text{
+        width: 242px !important;
+    }
+
+    #eventnewsitem2text{
+        width: 242px !important;
+    }
+
+    /*error page*/
+
+    .button-4>.fa {
+        line-height: 4.5;
+    }
+
+    .errorbutton{
+        padding: 15px 33px;
+        font-size: 8px !important;
+    }
+}
+
+@media only screen and (max-width: 350px){
+    #headertext{
+        font-size: 11px;
+        line-height: 12px;
+        margin-top: -350px;
+    }
+
+    #schoolcardbody{
+        margin-top: -6px;
+    }
+
+    #schoolimgdiv{
+        width: 320px;
+        height: 190px;
+    }
+
+    #cardcontent{
+        height: 180px;
+        width: 320px;
+    }
+
+    #schoolimg{
+        border-radius: 25px 25px 0 0 !important;
+    }
+
+    #schoolcardtext{
+        font-size: 10px !important;
+        margin-top: -20px;
+        line-height: 15px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -55px;
+        font-size: 12px !important;
+    }
+
+    #schoolcardcontainer{
+        margin-top: 65px !important;
+        padding: 0 40px;
+    }
+
+    #firefighterimg{
+        height: 200px !important;
+    }
+
+    #newsitem1{
+        width: 250px !important;
+        height: 210px !important;
+        margin-left: 7vw !important;
+    }
+
+    #newsitem2{
+        width: 230px !important;
+        height: 250px !important; 
+        margin-top: 200px;
+        margin-left: 30px !important;
+    }
+
+    #newsitem3{
+        width: 230px !important;
+        height: 250px !important;
+        margin-left: 30px !important;
+    }
+
+    #tststudentimg{
+        width: 170px !important;
+    }
+
+    #tstcontent1{
+        font-size: 19px;
+    }
+
+    #tstcontent2{
+        font-size: 14px;
+        padding: 0 20px;
+    }
+
+    .footer3{
+        font-size: 7px !important;
+    }
+
+    #footer3div{
+        width: 80px !important;
+    }
+
+    /* our school page */
+    #ourschoolimg{
+        height: 350px !important;
+    }
+
+    .ourschoolheading{
+        font-size: 26px !important;
+    }
+
+    .ourschoolcardcontent{
+        font-size: 12px !important;
+        line-height: 16px !important;
+    }
+
+    .ourschoolpara{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+     /*academic approach page*/
+
+     #academiccardimg{
+        height: 49vw;
+    }
+
+    #aaheadingmargin{
+        margin-top: -30vw !important;
+        font-size: 15px !important;
+        letter-spacing: 1px !important;
+    }
+
+    /*lab page */
+    .thumb{
+        margin: 10px 8px !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 17px !important;
+        letter-spacing: 0.5px !important;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 11px !important;
+    }
+
+    .contactinfo{
+        font-size: 7.5px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .adcontactcontent{
+        padding-left: 110px !important;
+    }
+
+    .adcontact{
+        padding-left: 0px !important;
+        margin-left: 8px !important;
+    }
+
+    #adcontactimg{
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    /*event page*/
+
+    #eventrow{
+        margin-left: 10px !important;
+    }
+    
+    #eventcolumn2{
+        margin-top: 30px;
+    }
+
+    .eventdate{
+        padding-left: 90px !important;
+        padding-top: 10px !important;
+    }
+
+    .eventheading{
+        padding-left: 90px !important;
+        padding-right: 100px !important;
+        font-size: 11px !important;
+    }
+
+    .eventtext{
+        padding-left: 90px !important;
+        font-size: 7px !important;
+    }
+
+    .eventnewsitem1{
+        margin-left: 2vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 2vw !important;
+    }
+
+    #eventnewsitem1img{
+        width: 220px !important;
+        height: 140px !important;
+    }
+
+    #eventnewsitem2img{
+        width: 220px !important;
+        height: 140px !important;
+    } 
+
+    #eventnewsitem1text{
+        width: 242px !important;
+    }
+
+    #eventnewsitem2text{
+        width: 242px !important;
+    }
+
+    /*contacts page*/
+    .gmaplocation{
+        width: 210px !important;
+    }
+}
+
+@media only screen and (max-width: 310px){
+    #schoolimgdiv{
+        width: 320px;
+        height: 150px;
+    }
+
+    #cardcontent{
+        height: 160px;
+        width: 320px;
+    }
+
+    #schoolcardcontainer{
+        padding: 0 50px;
+    }
+
+    #schoolcardtext{
+        font-size: 8px !important;
+        margin-top: -20px;
+        line-height: 11px !important;
+    }
+
+    #schoolcardtitle{
+        margin-top: -55px;
+        font-size: 11px !important;
+    }
+
+    #schoolcardbody{
+        margin-top: -13px;
+    }
+
+    #schoolbutton{
+        margin-top: -60px !important;
+    }
+
+    #newsitem1{
+        margin-left: -1vw !important;
+    }
+
+    #newsitem2{
+        margin-left: 5px !important;
+    }
+
+    #newsitem3{
+        margin-left: 5px !important;
+    }
+
+     /* our school page */
+     #ourschoolimg{
+        height: 300px !important;
+    }
+
+    .ourschoolheading{
+        font-size: 22px !important;
+    }
+
+    #ourschoolcardimg{
+        height: 50vw;
+    }
+
+    .ourschoolcardcontent{
+        font-size: 11.5px !important;
+        line-height: 15px !important;
+    }
+
+    .ourschoolpara{
+        padding-left: 25px !important;
+        padding-right: 25px !important;
+    }
+
+    /* academic approach page */
+    #aaheadingmargin{
+        margin-top: -30vw !important;
+        font-size: 13px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .la-chevron-circle-left{
+        font-size: 16px !important;
+    }
+
+    .la-chevron-circle-right{
+        font-size: 16px !important;
+    }
+
+     /* lab page */
+    #thumbnailbutton{
+        width: 25px !important;
+        margin-right: 10px !important;
+    }
+
+    /*play ground page */
+    #pgheadingmargin{
+        margin-top: -28vw !important;
+        font-size: 15px !important;
+        letter-spacing: 0.5px !important;
+    }
+
+     /*curricular activities page */
+    #caheadingmargin{
+        letter-spacing: 0.5px !important;
+        font-size: 8px !important;
+        margin-top: -26.5vw !important;
+        margin-left: -5px;
+    }
+        
+    /*branches page */
+    .branchesname{
+        font-size: 9px !important;
+        padding-left: 5px !important;
+    }
+
+    /*admission page*/
+    .contactheading{
+        font-size: 9px !important;
+    }
+
+    .contactinfo{
+        font-size: 6.8px !important;
+        letter-spacing: 1px !important;
+    }
+
+    .adcontactcontent{
+        padding-left: 110px !important;
+    }
+
+    .adcontact{
+        padding-left: 0px !important;
+        margin-left: 8px !important;
+    }
+
+    #adcontactimg{
+        height: 100px !important;
+        width: 100px !important;
+    }
+
+    #adpdf{
+        font-size: 9px;
+    }
+
+    /*event page*/
+
+    #eventrow{
+        margin-left: 10px !important;
+    }
+    
+    #eventcolumn2{
+        margin-top: 30px;
+    }
+
+    .eventdate{
+        padding-left: 80px !important;
+        padding-top: 10px !important;
+    }
+
+    .eventheading{
+        padding-left: 80px !important;
+        padding-right: 50px !important;
+        font-size: 11px !important;
+    }
+
+    .eventtext{
+        padding-left: 80px !important;
+        font-size: 7px !important;
+        padding-right: 30px !important;
+    }
+
+    .eventimgs{
+        width: 70px !important;
+        height: 105px !important;
+    }
+
+    .eventarrow{
+        width: 30px !important;
+    }
+
+    .eventnewsitem1{
+        margin-left: 1vw !important;
+    }
+
+    .eventnewsitem2{
+        margin-left: 1vw !important;
+    }
+
+    #eventnewsitem1img{
+        width: 190px !important;
+        height: 140px !important;
+    }
+
+    #eventnewsitem2img{
+        width: 190px !important;
+        height: 140px !important;
+    } 
+
+    #eventnewsitem1text{
+        width: 200px !important;
+    }
+
+    #eventnewsitem2text{
+        width: 200px !important;
+    }
+
+    /*contacts page*/
+    .gmaplocation{
+        width: 180px !important;
+        height: 170px !important;
+    }
+
+    .contactsmailid{
+        font-size: 8px !important;
+    }
+
+    /*error page*/
+    .errorbutton{
+        padding: 10px 25px;
+        font-size: 7px !important;
+    }
+}
+
+
+
+
